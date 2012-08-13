@@ -1,9 +1,11 @@
 RaRenewed::Application.routes.draw do
+  resources :videos
+
   ActiveAdmin.routes(self)
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  root :to => 'home#index'
+  root :to => 'videos#index'
 
   get "home/index"
 

@@ -1,0 +1,9 @@
+<%= content_for(:menu) do %>
+  <%= render partial: 'layouts/menu' %>
+<% end %>
+
+<%= content_for(:content) do %>
+  <%= yield %>
+<% end %>
+
+<%= render partial: "layouts/bootstrap" %>
