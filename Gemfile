@@ -12,7 +12,7 @@ gem 'mysql2'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
-  gem "twitter-bootstrap-rails"
+  gem "twitter-bootstrap-rails", :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git', :branch => 'static'
   gem "therubyracer"
   gem 'coffee-rails', '~> 3.2.1'
 
