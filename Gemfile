@@ -12,6 +12,8 @@ gem 'mysql2'
 # in production environments by default.
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
+  gem "twitter-bootstrap-rails"
+  gem "therubyracer"
   # gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -21,6 +23,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+gem 'capistrano', '2.12.0'
+gem 'capistrano-ext', '1.2.1'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -41,10 +45,6 @@ gem "activeadmin"
 gem "mysql2"
 gem "rails_admin"
 gem "rspec-rails", :group => [:development, :test]
-group :assets do
-  gem "twitter-bootstrap-rails"
-  gem "therubyracer"
-end
 
 gem "simple_form"
 gem "thin"
