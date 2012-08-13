@@ -1,4 +1,6 @@
 RaRenewed::Application.routes.draw do
+  resources :surfboards
+
   resources :videos
 
   ActiveAdmin.routes(self)
