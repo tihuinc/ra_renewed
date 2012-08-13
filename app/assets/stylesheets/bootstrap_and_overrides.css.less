@@ -1,6 +1,7 @@
 @import "twitter/bootstrap/bootstrap";
 body { 
   padding-top: 80px;
+  padding-left: 15px;
   background: #8d8d8d url('wood-background.jpeg') repeat fixed top center;
 }
 
@@ -20,16 +21,56 @@ body {
 
 // Font Awesome
 @import "fontawesome";
+// Variables.less
+// Variables to customize the look and feel of Bootstrap
+// Swatch: Cerulean
+// Version: 2.0.4
+// -----------------------------------------------------
 
-// Your custom LESS stylesheets goes here
-//
-// Since bootstrap was imported above you have access to its mixins which
-// you may use and inherit here
-//
-// If you'd like to override bootstrap's own variables, you can do so here as well
-// See http://twitter.github.com/bootstrap/less.html for their names and documentation
-//
-// Example:
-// @linkColor: #ff0000;
+// GLOBAL VALUES
+// --------------------------------------------------
 
-@navbarHeight:                    60px;
+// Grays
+// -------------------------
+@black:                 #000;
+@grayDarker:            #222;
+@grayDark:              #333;
+@gray:                  #555;
+@grayLight:             #999;
+@grayLighter:           #F5F5F5;
+@white:                 #fff;
+
+
+// Accent colors
+// -------------------------
+@blue:                  #3E78B3;
+@blueDark:              #033C73;
+@green:                 #73A839;
+@red:                   #C71C22;
+@yellow:                #F7B42C;
+@orange:                #DD5600;
+@pink:                  #F49AC1;
+@purple:                #9760B3;
+
+
+// Scaffolding
+// -------------------------
+@bodyBackground:        @white;
+@textColor:             @gray;
+
+
+// Links
+// -------------------------
+@linkColor:             #369BD7;
+@linkColorHover:        darken(@linkColor, 15%);
+
+@navbarHeight:                    80px;
+@navbarLinkColorActive:           @navbarLinkColorHover;
+@navbarLinkBackgroundHover:       transparent;
+@navbarLinkBackgroundActive:      rgba(0,0,0,.2);
+
+@navbarSearchBackground:          lighten(@navbarBackground, 25%);
+@navbarSearchBackgroundFocus:     @white;
+@navbarSearchBorder:              darken(@navbarSearchBackground, 30%);
+@navbarSearchPlaceholderColor:    @white;
+@navbarBrandColor:                @navbarLinkColor;
