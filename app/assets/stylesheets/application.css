@@ -10,7 +10,7 @@
  *
  *= require_self
  *= require royalslider
- *= require rs-default
+ *= require rs-minimal-white
  *= require global
  *= require_tree .
  */
