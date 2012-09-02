@@ -414,7 +414,7 @@
 .rsMinW .rsPreloader {
 	width:20px;
 	height:20px;
-	background-image:url(../preloaders/preloader.gif);
+	background-image:url('preloader.gif');
 
 	left:50%;
 	top:50%;
