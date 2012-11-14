@@ -4,7 +4,7 @@ require 'bundler/capistrano'
 set :stages, %w(production)
 
 set :application, "ra-renewed"
-set :repository,  "git://github.com/tihuinc/ra_renewed.git"
+
 set :branch, ENV['BRANCH'] || 'master'
 set :scm, 'git'
 
