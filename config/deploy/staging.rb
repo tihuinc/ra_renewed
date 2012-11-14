@@ -5,5 +5,3 @@ role :db,  "50.56.113.102", :primary => true # This is where Rails migrations wi
 set :rails_env, "staging"
 set :user, "ubuntu"
 set :password, "pass4Qual"
-
-set :repository,  "git://github.com/tihuinc/ra_renewed.git"
